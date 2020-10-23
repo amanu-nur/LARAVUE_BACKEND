@@ -27,3 +27,5 @@ Route::get('transactions/{id}/gallery', 'TransactionController@setStatus')
     ->name('transactions.status');
 
 Route::resource('transactions', 'TransactionController');
+
+Route::get('/logout', 'Auth\LoginController@logout');
