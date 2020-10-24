@@ -10,7 +10,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="name" class="form-control-label">Nama Barang</label>
-                    <select name="products_id" class="form-control @error('products_id') is-invalid @enderror">
+                    <select name="products_id" class="form-control @error('products_id') is-invalid @enderror"> 
                         @foreach ($products as $product)
                             <option value="{{$product->id}}">{{$product->name}}</option>
                         @endforeach
